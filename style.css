@@ -148,8 +148,8 @@ body {
     }
 }
 
-.hr {
-    background-color: rgb(218, 218, 218);
+hr {
+    background-color: #e6e6e6;
 }
 
 .imageContent img {
@@ -315,19 +315,19 @@ body {
 }
 
 .rent {
-    background-color: #bbb1ec;
-    color: #4B19B4;
-    padding: 3px 10px;
-    border-radius: 10px;
+    background-color: #cfd4f0;
+    color: #3B4CB8;
+    padding: 0.3125rem 0.5rem;
+    border-radius: 5px;
     font-size: 14px;
 }
 
 .location {
     background-color: #4B19B4;
     color: white;
-    padding: 3px 10px;
+    padding: 0.3125rem 0.5rem;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 0.6875rem;
 }
 
 .imgInfo {
@@ -341,9 +341,11 @@ body {
 
 }
 
+.fac{
+    font-size: 12px;
+}
+
 .price {
-    /* margin: 15px 0; */
-    font-size: 1.75rem;
     color: rgb(26, 25, 25);
 }
 
@@ -375,7 +377,8 @@ body {
     gap: 10px;
 }
 
-.userInfo span {
+.userInfo h6 {
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -387,7 +390,7 @@ body {
 }
 
 .card-body {
-    padding: 15px 30px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -448,29 +451,58 @@ body {
 }
 
 .profile-header {
-    background-color: #4B19B4;
-    border-radius: 10px;
-    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background-image: url('./img/img1.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
+    border-radius: 12px 12px 0 0;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
-.profile-header h2 {
-    font-size: 22px;
-    color: white;
+.profile-header .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3B4CB8;
+    opacity: 0.85;
+    z-index: 1;
+}
+
+.profile-header .profile-img {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+.profile-header h3 {
+    position: relative;
+    margin-top: 1rem;
+    z-index: 2;
 }
 
 .profile-header p {
-    color: white;
-    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    font-style: 12px;
 }
 
 .user-profile {
-    width: 23%;
+    width: 35%;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 12px;
     margin: 10px;
 }
 
@@ -482,7 +514,8 @@ body {
 }
 
 .user-profile .profile-details p {
-    margin: 5px 0;
+    padding: 14px 21px;
+    font-size: 12px;
 }
 
 .icon-section {
@@ -507,24 +540,33 @@ body {
     color: #4B19B4;
 }
 
+.container {
+    padding: 1.8rem;
+}
+
+.headerTitle {
+    padding: 1.5rem 1.875rem 1.25rem;
+}
+
 .dashboard-detail {
     background-color: #fff;
-    padding: 20px;
-    width: 47%;
+    width: 60%;
     box-sizing: border-box;
     border-radius: 8px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dashboard-detail h2 {
-    font-size: 22px;
-    margin: 10px 0;
+.dashboard-detail h4 {
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
 }
 
 .dashboard-detail p {
-    font-size: 17px;
-    margin: 20px 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+
     color: gray;
 
 }
@@ -604,7 +646,6 @@ body {
     color: #666;
 }
 
-
 .progress-container {
     display: flex;
     justify-content: center;
@@ -630,43 +671,33 @@ body {
 
 .progress-ring__circle {
     stroke-dasharray: 251.2;
-    stroke-dashoffset: calc(251.2 - (251.2 * 0.7));
+    stroke-dashoffset: 251.2; /* Start from 0% */
     transition: stroke-dashoffset 0.35s;
-    transition: stroke 0.35s;
+}
+
+.progress-text, .progress-text-green {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .progress-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    font-weight: bold;
     color: #5D5399;
-    height: 60px;
-    width: 60px;
     background-color: #DCDBF1;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .progress-text-green {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    font-weight: bold;
     color: #58E893;
-    height: 60px;
-    width: 60px;
     background-color: #C2F7DB;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .progress-section {
@@ -676,36 +707,45 @@ body {
 
 .progress-ring.green .progress-ring__circle {
     stroke: #28a745;
-    stroke-dashoffset: calc(251.2 - (251.2 * 0.9));
 }
 
-.agentList {
-    display: flex;
-    height: 35px;
-    align-items: center;
+
+td i {
+    color: #3B4CB8;
 }
 
-.agent {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.property-title {
+    margin: 1rem 0;
 }
 
-.agent i {
-    color: #4B19B4;
-    font-size: 17px;
-
+.agent-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #7e7e7e7e;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-p.agentName {
-    margin-left: 200px;
+.agent-table th,
+.agent-table td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.agent-table th {
+    background-color: #f2f2f2;
+}
+
+.agent-table td i {
+    margin-right: 10px;
 }
 
 .myfile-button {
     background-color: #4B19B4;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding:0.579rem 1rem;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
@@ -713,24 +753,24 @@ p.agentName {
 
 .my-files {
     background-color: #fff;
-    padding: 20px;
-    width: 25%;
     box-sizing: border-box;
     border-radius: 8px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.fileCard{
+.fileCard {
     display: flex;
     align-items: center;
     margin: 10px 0;
     justify-content: space-between;
-    border: 1px solid rgb(226, 226, 226); 
-    padding: 4px;
+    border: 1px solid rgb(226, 226, 226);
+    padding: 14px;
+    width: 25%;
     border-radius: 10px;
 }
-.billIcon{
+
+.billIcon {
     height: 60px;
     background-color: #FDEDCA;
     margin: 0 10px;
@@ -741,7 +781,8 @@ p.agentName {
     width: 60px;
     font-size: 25px;
 }
-.fileIcon{
+
+.fileIcon {
     height: 60px;
     background-color: #5D5399;
     margin: 0 10px;
@@ -752,7 +793,8 @@ p.agentName {
     width: 60px;
     font-size: 25px;
 }
-.dollerIcon{
+
+.dollerIcon {
     height: 60px;
     background-color: #DE957C;
     margin: 0 10px;
@@ -763,7 +805,8 @@ p.agentName {
     width: 60px;
     font-size: 25px;
 }
-.dataIcon{
+
+.dataIcon {
     height: 60px;
     background-color: #C6F9DB;
     margin: 0 10px;
@@ -774,59 +817,105 @@ p.agentName {
     width: 60px;
     font-size: 25px;
 }
-.align{
+
+.align {
     display: flex;
 }
-.fileIcon i{
+
+.fileIcon i {
     color: #c5beec;
 }
-.billIcon i{
+
+.billIcon i {
     color: #E8B541;
 }
-.dataIcon i{
+
+.dataIcon i {
     color: #4BD18A;
 }
-.dollerIcon i{
+
+.dollerIcon i {
     color: #FA492E;
 }
-.agentP{
+
+.a {
     color: gray;
 }
-.parsent{
+
+.parsent {
     background: #4B19B4;
     color: white;
     padding: 0 10px;
     border-radius: 10px;
 }
-.dollerparsent{
+
+.dollerparsent {
     background: #FA492E;
     color: white;
     padding: 0 10px;
     border-radius: 10px;
 }
-.billparsent{
+
+.billparsent {
     background: #FD9801;
     color: white;
     padding: 0 10px;
     border-radius: 10px;
 }
-.dataparsent{
+
+.dataparsent {
     background: #03DF61;
     color: white;
     padding: 0 10px;
     border-radius: 10px;
 }
 
-.header-container{
+.fileCards{
+    padding:1.875rem;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:20px ;
+    padding: 1.5rem 1.875rem 1.25rem;
+}
+.header-container h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+.progress-ring__circle {
+    stroke-dasharray: 251.2; /* This should match the circumference */
+    stroke-dashoffset: 251.2; /* Start from full circumference (0%) */
+    transition: stroke-dashoffset 1s ease;
 }
 
-@media (max-width: 520px){
-    p.agentName{
-        margin-left: 10px;
+.progress-text, .progress-text-green {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.progress-text {
+    color: #4e73df;
+}
+
+.progress-text-green {
+    color: #28a745;
+}
+
+
+@media (max-width: 520px) {
+    .fileCards {
+        display: block;
+    }
+    .fileCard{
+        width: 100%;
     }
 }
 

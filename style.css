@@ -201,12 +201,14 @@ body {
     font-weight: 500;
     margin-bottom: 10px;
 }
+
 .trdRole {
     font-size: 15px;
     color: rgb(55, 228, 55);
     font-weight: 500;
     margin-bottom: 10px;
 }
+
 .fourthBio {
     font-size: 15px;
     color: #F0C0C1;
@@ -221,6 +223,7 @@ body {
     background-color: #4B19B4;
     margin-bottom: 20px;
 }
+
 .profile-info .twobio {
     font-size: 14px;
     color: rgb(175, 175, 175);
@@ -249,6 +252,7 @@ body {
     font-size: 14px;
     margin: 10px 0;
 }
+
 .forth-btn {
     background-color: #0783C7;
     color: white;
@@ -298,7 +302,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
-    width: 100%; 
+    width: 100%;
     overflow: hidden;
 }
 
@@ -410,23 +414,465 @@ body {
 
 .houseRent {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
     padding: 0 20px;
     margin: 40px 0;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .houseRent {
-      grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
-  
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .houseRent {
-      grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr);
     }
-  }
+}
 
 
 /* house rent end */
+
+/* dashbord start */
+
+.dashboard-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.user-profile {
+    background-color: white;
+}
+
+.profile-header {
+    background-color: #4B19B4;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-header h2 {
+    font-size: 22px;
+    color: white;
+}
+
+.profile-header p {
+    color: white;
+    font-size: 14px;
+}
+
+.user-profile {
+    width: 23%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.user-profile .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.user-profile .profile-details p {
+    margin: 5px 0;
+}
+
+.icon-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.icon-section .icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #D9D1F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-section .icon i {
+    color: #4B19B4;
+}
+
+.dashboard-detail {
+    background-color: #fff;
+    padding: 20px;
+    width: 47%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-detail h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.dashboard-detail p {
+    font-size: 17px;
+    margin: 20px 0;
+    color: gray;
+
+}
+
+.profile-details p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.profile-details p span {
+    color: gray;
+}
+
+
+.card {
+    display: flex;
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-detail {
+    padding: 20px;
+    width: 50%;
+}
+
+.card-detail h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-detail p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-detail {
+    padding: 20px;
+    width: 50%;
+}
+
+.card-detail h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-detail p {
+    margin: 5px 0;
+    color: #666;
+}
+
+
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+.progress-ring {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.progress-ring__svg {
+    transform: rotate(-90deg);
+}
+
+.progress-ring__background {
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 0;
+}
+
+.progress-ring__circle {
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: calc(251.2 - (251.2 * 0.7));
+    transition: stroke-dashoffset 0.35s;
+    transition: stroke 0.35s;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #5D5399;
+    height: 60px;
+    width: 60px;
+    background-color: #DCDBF1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-text-green {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #58E893;
+    height: 60px;
+    width: 60px;
+    background-color: #C2F7DB;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-section {
+    display: flex;
+    gap: 10px;
+}
+
+.progress-ring.green .progress-ring__circle {
+    stroke: #28a745;
+    stroke-dashoffset: calc(251.2 - (251.2 * 0.9));
+}
+
+.agentList {
+    display: flex;
+    height: 35px;
+    align-items: center;
+}
+
+.agent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agent i {
+    color: #4B19B4;
+    font-size: 17px;
+
+}
+
+p.agentName {
+    margin-left: 200px;
+}
+
+.myfile-button {
+    background-color: #4B19B4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.my-files {
+    background-color: #fff;
+    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fileCard{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+    border: 1px solid rgb(226, 226, 226); 
+    padding: 4px;
+    border-radius: 10px;
+}
+.billIcon{
+    height: 60px;
+    background-color: #FDEDCA;
+    margin: 0 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-size: 25px;
+}
+.fileIcon{
+    height: 60px;
+    background-color: #5D5399;
+    margin: 0 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-size: 25px;
+}
+.dollerIcon{
+    height: 60px;
+    background-color: #DE957C;
+    margin: 0 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-size: 25px;
+}
+.dataIcon{
+    height: 60px;
+    background-color: #C6F9DB;
+    margin: 0 10px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    font-size: 25px;
+}
+.align{
+    display: flex;
+}
+.fileIcon i{
+    color: #c5beec;
+}
+.billIcon i{
+    color: #E8B541;
+}
+.dataIcon i{
+    color: #4BD18A;
+}
+.dollerIcon i{
+    color: #FA492E;
+}
+.agentP{
+    color: gray;
+}
+.parsent{
+    background: #4B19B4;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.dollerparsent{
+    background: #FA492E;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.billparsent{
+    background: #FD9801;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.dataparsent{
+    background: #03DF61;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px ;
+}
+
+@media (max-width: 520px){
+    p.agentName{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-info {
+        flex-direction: column;
+    }
+
+    .card-detail,
+    .progress-container {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .progress-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .user-profile,
+    .dashboard-detail,
+    .my-files {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .user-profile,
+    .dashboard-detail,
+    .my-files {
+        width: 100%;
+    }
+}
+
+/* dashbord end */

@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+.bgprimary {
+    background-color: #4B19B4;
+}
+
+.textprimary {
+    color: #4B19B4;
+}
+
+/* navbar section start  */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: rgba(245, 246, 247, 0.2) 0px 8px 24px;
+    margin: 15px 10px;
+    border-radius: 10px;
+}
+
+.addButton {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.sizeSm {
+    font-size: 14px;
+}
+
+.textgray {
+    color: gray;
+}
+
+.fontMd {
+    font-weight: 600;
+}
+
+/* navbar section end */
+
+/* card section start */
+.card-container {
+    padding: 20px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0;
+    max-width: 300px;
+    box-shadow: rgba(245, 246, 247, 0.2) 0px 8px 24px;
+}
+
+.padding {
+    padding: 0px 20px 0 20px;
+
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.imageContent {
+    background: white;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.imageContent h1 {
+    background-color: #4B19B4;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.secContent {
+    background: white;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.forthContent {
+    background: white;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.forthContent h1 {
+    color: white;
+    background-color: #03DD59;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.hr {
+    background-color: rgb(218, 218, 218);
+}
+
+.imageContent img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.secContent img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    font-size: 18px;
+}
+
+.userName {
+    color: #D2FBFF;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.px {
+    padding: 0 20px;
+}
+
+.role {
+    font-size: 15px;
+    color: #4B19B4;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.secrole {
+    font-size: 15px;
+    color: #7fb8c5;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.trdRole {
+    font-size: 15px;
+    color: rgb(55, 228, 55);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.fourthBio {
+    font-size: 15px;
+    color: #F0C0C1;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.profile-info .bio {
+    font-size: 14px;
+    color: white;
+    display: inline;
+    background-color: #4B19B4;
+    margin-bottom: 20px;
+}
+.profile-info .twobio {
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background-color: #03DD59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.thredbtn {
+    background-color: #C901DC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.forth-btn {
+    background-color: #0783C7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.secBtn {
+    background-color: #4B19B4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.profile-info span {
+    color: gray;
+    margin-right: 4px;
+}
+
+.info {
+    margin: 10px 0;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* card section end */
+
+
+
+
+/* house rent start */
+
+.house-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+}
+
+.house-img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rent {
+    background-color: #bbb1ec;
+    color: #4B19B4;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.location {
+    background-color: #4B19B4;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.imgInfo {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.price {
+    /* margin: 15px 0; */
+    font-size: 1.75rem;
+    color: rgb(26, 25, 25);
+}
+
+.user-Container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #76828f;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.userIcon {
+    font-size: 20px;
+}
+
+.userIcon i {
+    margin: 0 5px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userInfo span {
+    font-weight: 600;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.bi-heart,
+.bi-share,
+.bi-plus-circle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+.iconContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.iconContainer i {
+    color: #4B19B4;
+}
+
+.houseRent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px; 
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .houseRent {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .houseRent {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+
+
+/* house rent end */
